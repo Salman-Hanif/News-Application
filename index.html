@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsHub - Latest Updates</title>
+</head>
+<body>
+  
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>News<span>Hub</span></h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#" class="nav-btn" data-category="politics">Politics</a></li>
+                    <li><a href="#" class="nav-btn" data-category="cricket">Cricket</a></li>
+                    <li><a href="#" class="nav-btn" data-category="finance">Finance</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search news...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main>
+        <div class="hero-section">
+            <h2>Stay Updated with <span>Reliable</span> News</h2>
+        </div>
+        <div class="news-container" id="newsContainer">
+           
+        </div>
+        <div class="loading-spinner"></div>
+    </main>
+
+    
+    <footer>
+        <p>© 2023 NewsHub. All rights reserved.</p>
+    </footer>
+
+    
+    <template id="newsTemplate">
+        <div class="news-card">
+            <div class="news-image">
+                <img src="" alt="News Image">
+                <span class="category-badge"></span>
+            </div>
+            <div class="news-content">
+                <h3 class="news-title"></h3>
+                <p class="news-desc"></p>
+                <div class="news-meta">
+                    <span class="news-source"></span>
+                    <span class="news-date"></span>
+                </div>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
